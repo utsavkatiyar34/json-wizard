@@ -1,0 +1,47 @@
+.formatter-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.input-filed-wrapper {
+	position: relative;
+	width: 100%;
+	height: calc(100dvh - 40px);
+	background-color: #808080;
+}
+
+.output-filed-wrapper {
+	display: flex;
+	width: 100%;
+	height: calc(100dvh - 70px);
+	background-color: #808080;
+}
+
+.json-input-header {
+	display: flex;
+	height: 30px;
+	width: 100%;
+	background-color: #1e1e1e;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.json-input-area {
+	position: relative;
+	height: calc(100% - 50px) !important;
+}
+
+.json-input-header-light {
+	display: flex;
+	height: 30px;
+	width: 100%;
+	background-color: #ffffff;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	align-items: center;
+	justify-content: space-between;
+}

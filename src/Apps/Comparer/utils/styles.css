@@ -1,0 +1,119 @@
+.formatter-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: calc(100dvh - 40px);
+}
+
+.flex-wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	height: 100dvh !important;
+}
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	height: 100% !important;
+	width: 100%;
+}
+
+.flex-column-second {
+	display: flex;
+	flex-direction: column;
+	height: 100% !important;
+	width: 100%;
+}
+
+.input-filed-wrapper {
+	position: relative;
+	width: 50%;
+	height: calc(100dvh - 48px);
+	background-color: #808080;
+}
+
+.output-filed-wrapper {
+	display: flex;
+	height: calc(100dvh - 70px);
+	background-color: #808080;
+}
+
+.json-input-header {
+	display: flex;
+	padding-top: 0px !important;
+	padding-bottom: 10px !important;
+	width: 100% !important;
+	background-color: #1e1e1e;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.json-input-header-light {
+	display: flex;
+	padding-top: 0px !important;
+	padding-bottom: 10px !important;
+	width: 100% !important;
+	background-color: #ffffff;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.json-input-area {
+	position: relative;
+	height: 100% !important;
+}
+
+.compare-button {
+	display: flex;
+	cursor: pointer;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: none !important;
+	outline: none !important;
+	border-radius: 3px;
+	background-color: #31363f;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #1bb2ff;
+	font-weight: 600;
+}
+
+.compare-button-light {
+	display: flex;
+	cursor: pointer;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: none !important;
+	outline: none !important;
+	border-radius: 3px;
+	background-color: #888888;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	font-weight: 600;
+}
+
+.compare-button-light:hover {
+	display: flex;
+	cursor: pointer;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: none !important;
+	outline: none !important;
+	border-radius: 3px;
+	background-color: #656565;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	font-weight: 600;
+}
