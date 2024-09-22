@@ -220,7 +220,7 @@ export const JsonDiffCheckComponent: FC<Props> = memo(({ theme }) => {
 									cursorStyle: 'line',
 									formatOnPaste: true,
 									formatOnType: true,
-									wordWrap: true,
+									wordWrap: 'on',
 									selectOnLineNumbers: true,
 									readOnly: false
 								}}
@@ -312,7 +312,7 @@ export const JsonDiffCheckComponent: FC<Props> = memo(({ theme }) => {
 									cursorStyle: 'line',
 									formatOnPaste: true,
 									formatOnType: true,
-									wordWrap: true,
+									wordWrap: 'on',
 									selectOnLineNumbers: true,
 									readOnly: false
 								}}
@@ -346,7 +346,22 @@ export const JsonDiffCheckComponent: FC<Props> = memo(({ theme }) => {
 								formatOnType: true,
 								wordWrap: true,
 								selectOnLineNumbers: true,
-								readOnly: true
+								readOnly: true,
+								autoIndent: 'full',
+								contextmenu: true,
+								fontFamily: 'monospace',
+								fontSize: 12,
+								lineHeight: 20,
+								hideCursorInOverviewRuler: true,
+								matchBrackets: 'always',
+								scrollbar: {
+									horizontalSliderSize: 2,
+									verticalSliderSize: 16
+								},
+								automaticLayout: true,
+								minimap: {
+									enabled: true
+								}
 							}}
 							onMount={compreDidMount}
 						/>

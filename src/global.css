@@ -6,6 +6,8 @@ body {
 	padding: 0px !important;
 	color-scheme: light dark;
 	color: #ffffffde;
+	max-height: 100dvh !important;
+	overflow-y: hidden;
 	background-color: #31363f;
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;

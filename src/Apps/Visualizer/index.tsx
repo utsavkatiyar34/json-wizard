@@ -1,7 +1,18 @@
-import { FC, memo } from 'react';
+import { FC, Fragment, memo } from 'react';
+import { VisualizerInputComponent } from './Components/VisualizerInputComponent';
 
-interface Props {}
+import './utils/styles.css';
 
-export const JsonVisualizer: FC<Props> = memo(() => {
-	return <>Json Visualizer</>;
+interface Props {
+	theme: string;
+}
+
+export const JsonVisualizer: FC<Props> = memo(({ theme }) => {
+	return (
+		<Fragment>
+			<div className={theme == 'dark' ? 'visualizer-wrapper-dark' : 'visualizer-wrapper-light'}>
+				<VisualizerInputComponent theme={theme} />
+			</div>
+		</Fragment>
+	);
 });

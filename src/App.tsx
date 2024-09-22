@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Fragment } from 'react/jsx-runtime';
 import { NavBar } from './Components/NavBar/NavBar';
 import { PublicRoutes } from './Routes/PublicRoutes';
 import { NavigateFunction, useLocation, useNavigate } from 'react-router-dom';
@@ -17,10 +16,10 @@ export const App = () => {
 	}, [location?.pathname]);
 
 	return (
-		<Fragment>
+		<div>
 			<NavBar viewMode={viewMode} setViewMode={setViewMode} />
 			<PublicRoutes viewMode={viewMode} />
-		</Fragment>
+		</div>
 	);
 };
 

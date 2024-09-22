@@ -1,0 +1,117 @@
+.visualizer-wrapper-dark {
+	display: flex;
+	height: calc(100dvh - 50px) !important;
+}
+
+.visualizer-wrapper-light {
+	display: flex;
+	height: calc(100dvh - 50px) !important;
+	background-color: #ffffff !important;
+}
+
+.dark-input,
+.light-input {
+	position: relative;
+	display: flex;
+	width: 100% !important;
+	height: calc(100dvh - 50px) !important;
+}
+
+.dark-input-small,
+.light-input-small {
+	position: relative;
+	display: flex;
+	height: calc(100dvh - 50px) !important;
+}
+
+.input-filed-wrapper {
+	position: relative;
+	width: 100%;
+	height: calc(100dvh - 50px);
+	background-color: #808080;
+}
+
+.output-filed-wrapper {
+	display: flex;
+	width: 100%;
+	height: calc(100dvh - 70px);
+	background-color: #808080;
+}
+
+.json-input-header {
+	display: flex;
+	height: 30px;
+	width: 100%;
+	background-color: #1e1e1e;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.json-input-area {
+	position: relative;
+	height: calc(100% - 50px) !important;
+}
+
+.json-input-header-light {
+	display: flex;
+	height: 30px;
+	width: 100%;
+	background-color: #ffffff;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.compare-button {
+	display: flex;
+	cursor: pointer;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: none !important;
+	outline: none !important;
+	border-radius: 3px;
+	background-color: #31363f;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #1bb2ff;
+	font-weight: 600;
+}
+
+.compare-button-light {
+	display: flex;
+	cursor: pointer;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: none !important;
+	outline: none !important;
+	border-radius: 3px;
+	background-color: #888888;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	font-weight: 600;
+}
+
+.drag-wrapper {
+	flex: 1;
+	padding: 10px;
+}
+
+.drag-line {
+	width: 1px;
+	height: 100%;
+	background-color: #1e1e1e;
+	cursor: ew-resize;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}

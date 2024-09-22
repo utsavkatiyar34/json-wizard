@@ -1,7 +1,7 @@
 import { FC, memo } from 'react';
+import { Switch } from 'antd';
 import { NavLink } from 'react-router-dom';
-import { faSun } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { MoonOutlined, SunOutlined } from '@ant-design/icons';
 
 import './navbar.css';
 
@@ -29,13 +29,18 @@ export const NavBar: FC<Props> = memo(({ viewMode, setViewMode }) => {
 				>
 					{'Compare'}
 				</NavLink>
-				{/* <NavLink to='/visualize-json' className={({ isActive }) => (isActive ? 'link-active' : 'link-inactive')}>
+				<NavLink
+					to='/visualize-json'
+					className={({ isActive }) => (isActive ? (viewMode === 'dark' ? 'link-active' : 'link-active-light') : 'link-inactive')}
+				>
 					{'Visualize'}
-				</NavLink> */}
-
-				<FontAwesomeIcon
-					icon={faSun}
-					style={{ marginLeft: '20px', marginRight: '5px', cursor: 'pointer', fontSize: '20px', color: viewMode === 'light' ? '#142334' : 'white' }}
+				</NavLink>
+				<Switch
+					className='ml-10'
+					style={{ transition: 'all 0.5s' }}
+					checkedChildren={<MoonOutlined />}
+					unCheckedChildren={<SunOutlined />}
+					checked={viewMode === 'dark'}
 					onClick={() => {
 						if (viewMode === 'dark') {
 							localStorage.setItem('viewMode', 'light');

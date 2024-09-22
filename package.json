@@ -10,20 +10,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.5.1",
+    "@emotion/css": "^11.11.2",
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@monaco-editor/react": "^4.6.0",
+    "antd": "^5.20.6",
     "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-flow-diagram": "^2.13.0",
     "react-fontawesome": "^1.7.1",
     "react-redux": "^9.1.1",
     "react-router-dom": "^6.23.0",
     "react-tooltip": "^5.26.3",
-    "redux": "^5.0.1"
+    "reaflow": "^5.2.12",
+    "redux": "^5.0.1",
+    "styled-components": "^6.1.9"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

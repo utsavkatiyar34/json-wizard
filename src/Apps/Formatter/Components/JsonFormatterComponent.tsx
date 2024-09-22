@@ -148,7 +148,22 @@ export const JsonFormatterComponent: FC<Props> = memo(({ theme }) => {
 						formatOnType: true,
 						wordWrap: true,
 						selectOnLineNumbers: true,
-						readOnly: false
+						readOnly: false,
+						autoIndent: 'full',
+						contextmenu: true,
+						fontFamily: 'monospace',
+						fontSize: 12,
+						lineHeight: 20,
+						hideCursorInOverviewRuler: true,
+						matchBrackets: 'always',
+						scrollbar: {
+							horizontalSliderSize: 2,
+							verticalSliderSize: 16
+						},
+						automaticLayout: true,
+						minimap: {
+							enabled: true
+						}
 					}}
 					onMount={editorDidMount}
 				/>
